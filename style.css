@@ -1,0 +1,45 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;    
+}
+
+header {
+    
+}
+
+main {
+    background-color: blue;
+}
+
+footer {
+    background-color: aquamarine;
+}
+
+/*Mobile styles*/
+.nav-mobile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20%;
+}
+
+.fa-bars {
+    font-size: 6vh;
+    padding-top: 5%;
+}
