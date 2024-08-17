@@ -9,16 +9,17 @@
 }
 
 body {
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
-    width: 80%;
+    width: auto;
     margin: 0 auto;    
 }
 
-header {
-    
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 main {
@@ -36,10 +37,50 @@ footer {
 }
 
 .logo {
-    width: 20%;
+    width: 25%;
+}
+
+.list-menu {
+position: absolute;
+background-color: #FD8426;
+height: 100%;
+width: 65%;
+margin-left: -100%;
+}
+
+nav ul li {
+    padding: 10%;
+    height: 10%;
+    border-bottom: 2PX #f9f9f95b solid;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: #f56d05;
+}
+
+a {
+    color: #f9f9f9;
+    font-size: 1.3rem;
 }
 
 .fa-bars {
     font-size: 6vh;
-    padding-top: 5%;
+    padding: 5%;
+}
+
+/*Desktop styles*/
+@media (min-width: 768px) {
+    .list-menu {
+        position: relative; 
+    }
+
+    a {
+        color: black;
+    }
+
+    .fa-bars {
+        opacity: 0;    
+        font-size: 0;
+    }
 }
