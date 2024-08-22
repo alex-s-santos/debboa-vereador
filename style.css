@@ -8,79 +8,64 @@
     list-style: none;
 }
 
+/*General styles*/
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
-    width: auto;
-    margin: 0 auto;    
+    width: 80%;
+    margin: 0 auto;
 }
 
 nav {
+    background-color: antiquewhite;
+}
+
+.nav-content {
     display: flex;
     justify-content: space-between;
 }
 
-main {
-    background-color: blue;
+.nav-logo{
+    width: 15%;
 }
 
-footer {
-    background-color: aquamarine;
-}
-
-/*Mobile styles*/
-.nav-mobile {
+.nav-menu {
     display: flex;
     justify-content: space-between;
 }
 
-.logo {
-    width: 25%;
+header {
+    background-color: aqua;
 }
 
-.list-menu {
-position: absolute;
-background-color: #FD8426;
-height: 100%;
-width: 65%;
-margin-left: -100%;
-}
-
-nav ul li {
-    padding: 10%;
+.nav-btn {
     height: 10%;
-    border-bottom: 2PX #f9f9f95b solid;
+    width: 15%;
+    padding: 1%;
+    margin-top: 5%;
+    background-color: aqua;
+    border-radius: 25px;
     cursor: pointer;
 }
 
-nav ul li:hover {
-    background-color: #f56d05;
+.nav-btn a {
+    color: #000;
 }
 
-a {
-    color: #f9f9f9;
-    font-size: 1.3rem;
+main {
+    background-color: aquamarine;
 }
 
-.fa-bars {
-    font-size: 6vh;
-    padding: 5%;
+footer {
+    background-color: blueviolet;
 }
-
 /*Desktop styles*/
-@media (min-width: 768px) {
-    .list-menu {
-        position: relative; 
-    }
 
-    a {
-        color: black;
-    }
 
-    .fa-bars {
-        opacity: 0;    
-        font-size: 0;
-    }
+/*Mobile styles*/
+
+@media only screen and (max-width: 768px) {
+
 }
