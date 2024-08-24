@@ -11,6 +11,7 @@
 /*General styles*/
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f9f9f9;
 }
 
 .container {
@@ -18,10 +19,8 @@ body {
     margin: 0 auto;
 }
 
-nav {
-    background-color: antiquewhite;
-}
 
+/*nav styles*/
 .nav-content {
     display: flex;
     justify-content: space-between;
@@ -33,25 +32,49 @@ nav {
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    margin: auto 0;
 }
 
-header {
-    background-color: aqua;
+.nav-menu li {
+    padding: 0 3%;
+}
+
+.nav-menu li a {
+    color: #fd8426;
+}
+
+.nav-menu li a:hover {
+    border-bottom: 1px solid #fd8426;
+    filter: drop-shadow(5px 5px 5px #fd8426)
 }
 
 .nav-btn {
     height: 10%;
-    width: 15%;
+    width: 20%;
     padding: 1%;
-    margin-top: 5%;
-    background-color: aqua;
+    margin: auto 0;
+    background-color: #fd8426;
     border-radius: 25px;
     cursor: pointer;
 }
 
+.nav-btn:hover {
+    background-color: #fd83269f;
+    box-shadow: 2px 2px 15px #fd8426;
+}
+
+.nav-btn:hover > a {
+    color: #f5710d;
+}
+
 .nav-btn a {
-    color: #000;
+    color: #f9f9f9;
+    font-weight: bold;
+    padding: 0 14.5%;
+}
+
+header {
+    background-color: aqua;
 }
 
 main {
