@@ -20,7 +20,26 @@ body {
 }
 
 
-/*nav styles*/
+/*NAV STYLES*/
+/*nav social media bar*/
+.nav-social-medias {
+    background-color: #fd8426;
+    color: #f9f9f9;
+    padding-right: 3%;
+    font-size: 1.3rem;
+}
+
+.nav-social-medias ul {
+    display: flex;
+    justify-content: end;
+}
+
+.nav-social-medias ul li {
+    padding: 0 1%;
+    cursor: pointer;
+}
+
+/*nav menu*/
 .nav-content {
     display: flex;
     justify-content: space-between;
@@ -49,30 +68,25 @@ body {
 }
 
 .nav-btn {
-    height: 10%;
-    width: 20%;
-    padding: 1%;
     margin: auto 0;
     background-color: #fd8426;
-    border-radius: 25px;
-    cursor: pointer;
+    color: #f9f9f9;
+    padding: 1% 4%;
+    border-radius: 0 15px;
+    border: 2px solid gray;
 }
 
 .nav-btn:hover {
-    background-color: #fd83269f;
-    box-shadow: 2px 2px 15px #fd8426;
+    background-color: #fd8326cc;
+    box-shadow: -4px 2px 10px #fd8426;
+    color: gray;
 }
 
-.nav-btn:hover > a {
-    color: #f5710d;
+.nav-bars {
+    font-size: 0;
 }
 
-.nav-btn a {
-    color: #f9f9f9;
-    font-weight: bold;
-    padding: 0 14.5%;
-}
-
+/*HEADER STYLES*/
 header {
     background-color: aqua;
 }
@@ -84,11 +98,36 @@ main {
 footer {
     background-color: blueviolet;
 }
-/*Desktop styles*/
 
 
 /*Mobile styles*/
-
 @media only screen and (max-width: 768px) {
+    .nav-social-medias {
+        display: none;
+    }
+
+    .nav-menu {
+        position: absolute;
+        display: block;
+        background-color: #fd8426;
+        margin: 0 -50px;
+        padding: 10vh 25vh;
+    }
+
+    .nav-menu li a {
+        color: #f9f9f9;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-bars {
+        font-size: 2rem;
+        margin: auto 0;
+        color: #fd8426;
+    }
 
 }
+
+/*animations*/
