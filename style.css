@@ -108,9 +108,9 @@ footer {
 
     .nav-menu {
         position: absolute;
+        margin: 0 -20%;
         display: block;
         background-color: #fd8426;
-        margin: 0 -50px;
         padding: 10vh 25vh;
     }
 
